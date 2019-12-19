@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
            else{
                try{
                    //更新book欄位為輸入字串（ed_book）的資料的price欄位數值
-                   dbrw.execSQL("UPDATE myTable SET price= "+ed_price.getText().toString()+"WHERE book LIKE '"+ed_book.getText().toString()+"'");
+                   dbrw.execSQL("UPDATE myTable SET price= "+ed_price.getText().toString()+" WHERE book LIKE '"+ed_book.getText().toString()+"'");
                    Toast.makeText(MainActivity.this,"更新書名"+ed_book.getText().toString()+"價格"+ed_price.getText().toString(),Toast.LENGTH_SHORT).show();
 
                    ed_book.setText("");
